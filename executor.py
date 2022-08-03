@@ -4,7 +4,13 @@ from typing import Any, Dict
 
 
 class ElementTypeTagger(Executor):
-    def __init__(self, key_name="element_type", traversal_paths: str = "@r", *args, **kwargs):
+    def __init__(
+        self,
+        key_name: str = "element_type",
+        traversal_paths: str = "@r",
+        *args,
+        **kwargs
+    ):
         super().__init__(*args, **kwargs)
         self.key_name = key_name
         self.traversal_paths = traversal_paths
@@ -22,5 +28,3 @@ class ElementTypeTagger(Executor):
                 doc.tags[self.key_name] = "text"
             else:
                 doc.tags[self.key_name] = "unknown"
-
-
