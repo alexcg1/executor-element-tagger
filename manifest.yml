@@ -1,2 +1,5 @@
 manifest_version: 1
 name: ElementTypeTagger
+description: "Tag Documents based on whether they're text or image"
+url: https://github.com/alexcg1/executor-element-tagger
+keywords: [tagging]
